@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "max30102.c"
+        "ble_monivitals.c"
+        "vitals_engine.c"
+    INCLUDE_DIRS
+        "."
+        "../include"
+    REQUIRES
+        nvs_flash
+        bt
+        driver
+        esp_timer
+        esp_rom
+)
